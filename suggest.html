@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggest Budget</title>
+    <link rel="stylesheet" href="special_style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="suggest-box">
+            <h2>Suggest Budget</h2>
+            <input type="number" id="budgetInput" placeholder="Enter your budget">
+            <button class="glow-button" onclick="predictBudget()">Get Suggestion</button>
+            <button class="back-button" onclick="window.location.href='index.html'">Back</button>
+            <h3>Suggested Allocation</h3>
+            <table border="1" id="suggest-table">
+                <thead>
+                    <tr>
+                        <th>Category</th><th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

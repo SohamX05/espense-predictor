@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Data</title>
+    <link rel="stylesheet" href="special_style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="store-box">
+            <h2>Store Your Expenses</h2>
+            <form id="store-form">
+                <input type="number" id="budget" placeholder="Total Budget" required>
+                <input type="number" id="food" placeholder="Food Expense" required>
+                <input type="number" id="rent" placeholder="Rent Expense" required>
+                <input type="number" id="transport" placeholder="Transport Expense" required>
+                <input type="number" id="entertainment" placeholder="Entertainment Expense" required>
+                <input type="number" id="shopping" placeholder="Shopping Expense" required>
+                <input type="number" id="savings" placeholder="Savings" required>
+                <button type="submit" class="store-button">Store Data</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Table Appears Below -->
+    <div class="table-container">
+        <h3>Stored Data</h3>
+        <table id="expense-table">
+            <thead>
+                <tr>
+                    <th>Budget</th>
+                    <th>Food</th>
+                    <th>Rent</th>
+                    <th>Transport</th>
+                    <th>Entertainment</th>
+                    <th>Shopping</th>
+                    <th>Savings</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
